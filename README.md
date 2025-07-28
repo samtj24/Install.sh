@@ -122,3 +122,4 @@ Install.sh/
 **Сделано с ❤️ для сообщества Arch Linux**
 
 > "Keep it simple, stupid" - философия Arch Linux
+# test
