@@ -1,0 +1,79 @@
+# Временные файлы
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Логи
+*.log
+logs/
+
+# Резервные копии
+*.bak
+*.backup
+*.orig
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Test files
+test/
+tests/output/
+*.test
+
+# Secrets and private data
+*.key
+*.pem
+secrets.txt
+.env
+.env.local
+
+# Build artifacts
+build/
+dist/
+*.deb
+*.rpm
+*.pkg.tar.xz
+
+# Documentation build
+_site/
+.jekyll-metadata
+
+# VM and testing files
+*.iso
+*.img
+*.qcow2
+*.vdi
+*.vmdk
+
+# Archives
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+*.rar
+
+# Patch files
+*.patch
+*.diff
+
+# Local configuration overrides
+local_config/
+user_configs/
+
+# Screenshots for issues (use screenshots/ folder instead)
+screenshot_*.png
+debug_*.txt
