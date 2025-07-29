@@ -1,15 +1,14 @@
-
 #!/bin/bash
 set -e
 echo -e "\e[1;32m--- Установка Arch Linux (BIOS, для старого ноутбука) ---\e[0m"
 
 # Ввод данных
-read -p "Укажи диск для установки (например: /dev/sda): " DISK
-read -p "Имя хоста (hostname): " HOSTNAME
-read -p "Имя пользователя: " USERNAME
-read -s -p "Пароль для пользователя $USERNAME: " USERPASS
+read -r -p "Укажи диск для установки (например: /dev/sda): " DISK
+read -r -p "Имя хоста (hostname): " HOSTNAME
+read -r -p "Имя пользователя: " USERNAME
+read -r -s -p "Пароль для пользователя $USERNAME: " USERPASS
 echo
-read -s -p "Пароль для root: " ROOTPASS
+read -r -s -p "Пароль для root: " ROOTPASS
 echo
 
 # Проверка существования диска
@@ -28,7 +27,7 @@ fi
 
 # Подтверждение установки
 echo -e "\e[1;33mВНИМАНИЕ: Все данные на диске $DISK будут удалены!\e[0m"
-read -p "Продолжить? (y/N): " CONFIRM
+read -r -p "Продолжить? (y/N): " CONFIRM
 if [[ ! "$CONFIRM" =~ ^[Yy]$ ]]; then
   echo "Установка отменена"
   exit 0
